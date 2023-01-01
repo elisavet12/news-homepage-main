@@ -12,8 +12,10 @@
   --Very-dark-blue: hsl(240, 100%, 5%);
 }
 
-.attribution {
+body {
+  padding: 1.8rem;
 }
+
 .black-items-info {
 }
 .black-items-info--excerpt {
@@ -24,6 +26,11 @@
   font-weight: 400;
   color: var(--Off-white);
 }
+
+.black-items-info--title:hover {
+  color: var(--Soft-orange);
+}
+
 .burger {
 }
 .burger-icon {
@@ -57,19 +64,42 @@ header {
   display: inline-block;
 }
 .infos-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+  color: var(--Off-white);
+  margin: 0px;
 }
 .item-img {
+  width: 100%;
+  display: inline-block;
 }
 .items--item-img {
 }
 .items--item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .items--item-info__excerpt {
+  width: 24ch;
 }
 .items--item-info__number {
+  font-size: 2rem;
+  color: var(--Grayish-blue);
+  font-weight: 800;
 }
 .items--item-info__title {
+  font-size: 1.2rem;
+  margin: 0px;
+  width: 18ch;
 }
+
+.items--item-info__title:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+}
+
 .logo {
 }
 .main--black-items {
@@ -89,14 +119,39 @@ header {
 .main--white-info--infos {
 }
 .main--white-info--infos-button {
+  background-color: var(--Soft-red);
+  border: none;
+  padding: 0px;
+  /* padding-top: 1.2rem;
+  padding-bottom: 1.2rem; */
+  height: 3.06rem;
+  padding-left: 2.13rem;
+  padding-right: 2.13rem;
 }
+
+.main--white-info--infos-button:hover {
+  background-color: var(--Very-dark-blue);
+}
+
 .main--white-info--infos-excerpt {
+  /* font-size: 0.93rem;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400; */
+  margin-bottom: 2.53rem;
+  width: 36ch;
+}
+
+.excerpt {
+  font-size: 0.93rem;
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
 }
 .main--white-info--title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 1;
   color: var(--Very-dark-blue);
+  width: 11ch;
 }
 .nav {
 }
@@ -123,10 +178,13 @@ header {
 }
 .section__items--item {
   display: flex;
+  gap: 1.6rem;
 }
 .section__main {
   display: flex;
   flex-direction: row;
+  gap: 1.8rem;
+  margin-bottom: 4.66rem;
 }
 .section__main--black {
   background-color: var(--Very-dark-blue);
@@ -134,4 +192,5 @@ header {
 .section__main--white {
   display: flex;
   flex-direction: column;
+  gap: 2.26rem;
 }
